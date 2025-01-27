@@ -1,5 +1,5 @@
 public class Product {
-    private int productID;
+    int productID;
     private String productName;
     private String title;
     private double price;
@@ -16,14 +16,10 @@ public class Product {
         this.startPrice = startPrice;
     }
 
-    public Product(String s, String title, int i, int i1) {
-    }
-
     public Product(String productName, String title, double price) {
         this.productName = productName;
         this.title = title;
         this.price = price;
-        this.productID = Integer.parseInt("ID-" + System.currentTimeMillis());  // Пример генерации ID
     }
 
     public String getProductName() {

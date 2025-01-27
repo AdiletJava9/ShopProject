@@ -23,6 +23,9 @@ public class Auction {
 
 
     public Auction(String auctionID, Product product, double startingPrice) {
+        this.auctionID = auctionID;
+        this.product = product;
+        this.startingPrice = startingPrice;
     }
 
     public String getAuctionID() {

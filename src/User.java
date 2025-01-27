@@ -23,10 +23,6 @@ public class User {
         return userName;
     }
 
-    public String getUSer() {
-        return null;
-    }
-
     public void setUserName(String userName) {
         this.userName = userName;
     }

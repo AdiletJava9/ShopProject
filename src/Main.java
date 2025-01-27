@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         AuctionManager manager = new AuctionManager();
@@ -19,10 +20,11 @@ public class Main {
                 case 1:
                     System.out.print("Введите название товара: ");
                     String name = scanner.nextLine();
+                    System.out.println("Введите Title товара: ");
                     String title = scanner.nextLine();
                     System.out.print("Введите стартовую цену: ");
                     double price = scanner.nextDouble();
-                    Product product = new Product(name,title,0,3);
+                    Product product = new Product(name, title, price);
                     manager.createAuction(product, price);
                     break;
                 case 2:
